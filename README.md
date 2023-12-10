@@ -1,30 +1,118 @@
-# React + TypeScript + Vite
+<!-- Logo Section -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <a href="https://github.com/kyotodevindie">
+    <img src="public/assets/repoCover.svg" alt="cover logo" >
+  </a>
 
-Currently, two official plugins are available:
+  <!-- Demo Section -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- Build With Section -->
+### Built With
 
-## Expanding the ESLint configuration
+- [React](https://pt-br.reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Roter-Dom](https://reactrouter.com/en/main)
+- [React-Hook-Form](https://www.react-hook-form.com/)
+- [StoryBook](https://storybook.js.org/)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [React-Query](https://tanstack.com/query/v3/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Dayjs](https://day.js.org/)
+- [Sass](https://sass-lang.com/)
+- [Zod](https://zod.dev/)
+- [Husky](https://typicode.github.io/husky/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Cypress](https://www.cypress.io/)
+- [Vitest](https://vitest.dev/)
+- [React-Testing-Library](https://testing-library.com/docs/react-testing-library/intro/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<!-- Installation Section -->
+### Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repo
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+git clone https://github.com/kyotodevIndie/tasks..git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Install the packages using your favorite package manager
+
+```sh
+yarn
+```
+
+4. run the project
+
+```sh
+yarn start
+```
+
+5. Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
+
+6. Happy coding!
+
+<!-- Utils Section -->
+### Scripts
+
+1. To run the project
+
+```sh
+yarn start
+```
+
+2. To run the storybook
+
+```sh
+yarn run storybook
+```
+
+3. To run the build
+
+```sh
+yarn build
+```
+
+4. To run the tests
+
+```sh
+yarn test
+```
+
+5. To run the EsLint
+
+```sh
+yarn lint
+```
+
+6. To run the Cypress
+
+```sh
+npx cypress open
+```
+
+<!-- Contributing Section -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- License Section -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- Thank you Section -->
+## Thank you
+
+   <p>
+    thank you for your patience to read this far! if possible, give a star!
+   </p>
+   <img src="https://lh3.googleusercontent.com/pw/ACtC-3f0oIHIN5_S0Z72L0b3XQSkL9or6r0pgoyhyugqOA02f8lv1MaYY4aucAd1jTGbWl8-4mPviLlDiIN7frgGYWldM3x45yfi7BxCkfMFUm7NnClHQRIRw5QLFco123lsR0Kyp-uFuDdD9ZBVnqwxTywp=s512-no?authuser=0" alt="img" width="150" height="150">
