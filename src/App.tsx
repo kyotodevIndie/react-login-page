@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Login } from './pages/Login'
+import { createBrowserRouter, RouterProvider, redirect } from 'react-router-dom'
+import { User } from './pages/User'
+import { Layout } from './components/Layout'
+import { useAuthStore } from './store/useAuthStore'
 
-function App() {
-  const [count, setCount] = useState(0)
+const protectedLoader = () => {
+  const isAuthenticated = useAuthStore.getState().isAuthenticated
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  if (!isAuthenticated) {
+    return redirect('/')
+  }
+
+  return null
 }
 
-export default App
+const logout = () => {
+  const setLogout = useAuthStore.getState().setLogout
+  setLogout()
+  return redirect('/')
+}
+
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Login />,
+  },
+  {
+    path: 'user',
+    element: <Layout />,
+    children: [
+      {
+        path: '',
+        loader: protectedLoader,
+        element: <User />,
+      },
+    ],
+  },
+  {
+    path: '/logout',
+    loader: logout,
+  },
+])
+
+export const App = () => {
+  return (
+    <RouterProvider
+      router={router}
+      fallbackElement={<img src="assets/logo.svg" alt="logo" />}
+    />
+  )
+}
