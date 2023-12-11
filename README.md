@@ -38,11 +38,18 @@
 git clone git@github.com:kyotodevIndie/teste-pratico.git
 ```
 
-1. Install the packages using your favorite package manager
+2. Install the packages using your favorite package manager
 
 ```sh
 yarn
 ```
+
+3. Add to your .env file
+
+```sh
+VITE_BASE_URL=https://dummyjson.com
+```
+value defined in readme for testing purposes only
 
 4. run the project
 
