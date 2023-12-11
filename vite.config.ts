@@ -10,7 +10,4 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
   },
-  define: {
-    VITE_BASE_URL: 'https://dummyjson.com',
-  },
 })
