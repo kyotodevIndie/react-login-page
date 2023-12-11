@@ -1,0 +1,33 @@
+@import "../../styles/variables"
+
+.input 
+  background-color: $gray-700
+  border: 1px solid $gray-600
+  color: $slate-50
+  display: block
+  width: 100%
+  padding: 0.625rem
+  border-radius: 0.5rem
+
+  &:focus
+    box-shadow: $violet-600
+    border-color: $violet-600
+    outline: none
+  
+  &::placeholder
+    color: $gray-400
+
+  @media (min-width: $sm) 
+    font-size: $text-sm
+    line-height: 1.25rem
+
+.input__label
+  display: block 
+  margin-bottom: 0.5rem 
+  font-size: $text-sm
+  line-height: 1.25rem 
+  font-weight: 500 
+  color: $gray-50
+
+.input__errorLabel
+  color: $red-600
