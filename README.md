@@ -1,8 +1,7 @@
 <!-- Logo Section -->
 
-  <a href="https://github.com/kyotodevindie">
-    <img src="public/assets/repoCover.svg" alt="cover logo" >
-  </a>
+
+<img src="public/assets/repoCover.svg" alt="cover logo" >
 
   <!-- Demo Section -->
 
@@ -35,7 +34,7 @@
 1. Clone the repo
 
 ```sh
-git clone https://github.com/kyotodevIndie/tasks..git
+git clone git@github.com:kyotodevIndie/teste-pratico.git
 ```
 
 1. Install the packages using your favorite package manager
