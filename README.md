@@ -4,6 +4,7 @@
 <img src="public/assets/repoCover.svg" alt="cover logo" >
 
   <!-- Demo Section -->
+  <p align='center'><a href='https://teste-pratico-swart.vercel.app/' align='center'>View Demo</a></p>
 
 <!-- Build With Section -->
 ### Built With
