@@ -1,0 +1,95 @@
+@import "../../styles/variables"
+
+.user__section
+  display: flex 
+  padding: 2rem 1.5rem
+  flex-direction: column 
+  justify-content: center 
+  align-items: center 
+  height: 100vh 
+
+  @media (min-width: $lg)
+    padding-top: 0
+    padding-bottom: 0 
+
+.user__list
+  display: grid
+  gap: 10px
+  grid-template-columns: repeat(3, 1fr)
+
+  @media (max-width: $sm)
+    grid-template-columns: repeat(auto-fit, 200px)
+
+.user__avatar__container 
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  gap: 12px
+
+.user__avatar
+  width: 3rem
+  border-radius: 50%
+  background-color: $slate-700
+
+
+.user__card
+  margin: 3rem 0
+  max-width: 50rem
+  @media (max-width: $sm)
+    overflow-y: scroll
+
+
+.user__subtitle 
+  color: $slate-50
+  font-size: $text-xl
+  font-weight: 600
+  padding: 1rem 0
+
+.divider 
+  border: 1px solid $gray-700
+  margin-top: 1rem
+
+.skeleton
+  background-color: $gray-700
+  background-image: linear-gradient(90deg, rgba($gray-400, 0), rgba($gray-400, 0.5), rgba($gray-400, 0))
+  background-size: 40px 100% 
+  background-repeat: no-repeat
+  background-position: left -40px top 0 
+  animation: shine 1s ease infinite
+
+
+@keyframes shine 
+  to 
+    background-position: right -40px top 0
+
+.line
+  width: 100%
+  height: 18px
+  border-radius: 6px
+
+.skeleton__container
+  display: flex
+  flex-direction: column
+  gap: 4px
+
+.loading__container
+  display: grid
+  gap: 10px
+  grid-template-columns: repeat(3, 1fr)
+  margin-top: 1rem
+
+  @media (max-width: $sm)
+    grid-template-columns: repeat(auto-fit, 200px)
+
+.user__error__container
+  display: flex
+  flex-direction: column
+  gap: 16px
+  justify-content: center
+  align-items: center
+  height: 90vh
+  color: $gray-50
+
+.user__error__Text
+  width: 30%
+  text-align: center
