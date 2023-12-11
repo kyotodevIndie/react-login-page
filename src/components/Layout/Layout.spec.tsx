@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import { describe, it } from 'vitest'
@@ -17,6 +18,6 @@ describe('Components / Layout', () => {
 
     const signOutLink = screen.getByTestId('cypress-link-signout')
     expect(signOutLink).toBeInTheDocument()
-    expect(signOutLink).toHaveAttribute('href', '/logout')
+    expect(signOutLink.getAttribute('href')).toBe('/logout')
   })
 })
